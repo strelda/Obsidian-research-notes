@@ -21,14 +21,8 @@ Daily/*
 Attachments/*
 !Attachments/.gitkeep
 
-# Exclude private notes, keeping only dashboards and the example project note
+# Exclude private notes, keeping only the example project note
 Notes/*
-!Notes/Projects.md
-!Notes/Ideas.md
-!Notes/Memos.md
-!Notes/Sources.md
-!Notes/People.md
-!Notes/Meetings.md
 !Notes/Example Project.md
 
 # AI scratchpads, proposals, and working documents
@@ -41,7 +35,6 @@ AI/Dreaming/Imports/*
 AI/Dreaming/Runs/*
 !AI/Dreaming/Runs/README.md
 
-# AI memory topics (keep example topic and .gitkeep)
+# AI memory topics
 AI/Memory/Topics/*
-!AI/Memory/Topics/Example Project/
 !AI/Memory/Topics/.gitkeep

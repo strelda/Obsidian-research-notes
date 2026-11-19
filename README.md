@@ -14,13 +14,7 @@ This vault separates human-authored knowledge from the agent workspace while pro
 
 ```
 ├── .obsidian/         # Obsidian configuration, themes (Things), and recommended plugins
-├── Notes/             # Human-owned notes, project homes, and category dashboards
-│   ├── Projects.md    # Base view dashboard filtering active/done projects
-│   ├── Ideas.md       # Base view dashboard for research hypotheses
-│   ├── Memos.md       # Base view dashboard for atomic conceptual notes
-│   ├── Sources.md     # Base view dashboard for literature & references
-│   ├── People.md      # Base view dashboard for collaborators & researchers
-│   ├── Meetings.md    # Base view dashboard for syncs & agendas
+├── Notes/             # Human-owned notes and project homes
 │   └── Example Project.md # Sample project note demonstrating structure
 ├── Daily/             # Temporal anchors (YYYY-MM-DD.md) following Steph Ango's convention
 ├── Attachments/       # Diagrams, local figures, PDFs, and assets

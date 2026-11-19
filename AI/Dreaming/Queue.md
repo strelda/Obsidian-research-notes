@@ -22,9 +22,3 @@ Leave a field out if empty. Do not restate what the project note already says. M
 
 ## Inputs
 
-- [processed: 2026-11-19_example-init] 2026-11-19 — Antigravity — Example Project (Notes/Example Project.md)
-  - Decisions (with reason): gauge choice A selected over B to avoid spurious coordinate singularities in metric tensor calculations (verified 2026-11-19).
-  - Lessons / surprises: numerical precision issues near degenerate points require symbolic checks (reported).
-  - Conventions or owner corrections: code and raw simulation data kept in external repository; vault keeps synthesis and AI memory (reported).
-  - State change worth knowing next time: baseline toy model verified against known analytical limits; simulation pipeline under construction (reported).
-  - Evidence: [[Notes/Example Project]].

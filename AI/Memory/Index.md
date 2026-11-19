@@ -8,8 +8,3 @@ Catalog of AI-owned memory. Read this first, then only the pages you need. Memor
 
 ## Active Projects
 
-- [[AI/Memory/Topics/Example Project/State|Example Project: state]] — current goals, active stage, and verified milestones.
-- [[AI/Memory/Topics/Example Project/Decisions|Example Project: decisions]] — key decisions, architectural choices, and rationale.
-- [[AI/Memory/Topics/Example Project/Conventions|Example Project: conventions]] — conventions, directory layout, and workflows.
-- [[AI/Memory/Topics/Example Project/Lessons|Example Project: lessons]] — failure modes, surprises, and what worked.
-- [[AI/Memory/Topics/Example Project/Open questions|Example Project: open questions]] — unresolved problems and next investigations.
