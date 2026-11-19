@@ -1,0 +1,9 @@
+{
+  "settingsPopoutWindow": false,
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes",
+  "attachmentFolderPath": "Attachments",
+  "promptDelete": false
+}

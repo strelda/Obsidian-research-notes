@@ -1,0 +1,21 @@
+{
+  "types": {
+    "categories": "multitext",
+    "status": "text",
+    "summary": "text",
+    "created": "date",
+    "last_edited_by": "text",
+    "ai_access": "text",
+    "source": "text",
+    "author": "text",
+    "year": "number",
+    "zotero": "text",
+    "doi": "text",
+    "url": "text",
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "links": "multitext",
+    "people": "multitext"
+  }
+}
