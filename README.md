@@ -1,10 +1,10 @@
----
-type: profile
-ai_access: r
----
 # Obsidian Research Notes (Collaborative Human-AI Second Brain)
 
 A research knowledge base and second-brain template for [Obsidian](https://obsidian.md), architected for deep human-AI collaboration. It features category dashboards powered by Obsidian Base views, strict agent access-control policies, and an AI memory dreaming system adapted for local vaults.
+
+This was inspired by [memory feature](https://www.anthropic.com/research/components-of-agent-memory) where [dreaming](https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow) is enabled, and by the simple approach to note-taking by [Stephen Ango](https://stephango.com/vault).
+
+It was then fine-tuned by having agents use it while logging their progress, which was later analysed and used to improve the rules.
 
 ---
 
