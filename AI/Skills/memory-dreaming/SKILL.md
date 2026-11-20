@@ -24,21 +24,27 @@ Memory is what a later session needs and cannot easily get from the notes, code 
 ## Steps
 
 1. **Start.** Run ID = `YYYY-MM-DD_<topic>`. Take all `[pending]` entries (or the ones the owner named). Skip entries containing secrets or `ai_access: none/w` material, and mark them `failed`.
-2. **Snapshot.** Before any edit, copy all of `AI/Memory/Topics/`, `AI/Memory/Index.md` and `AI/Dreaming/Queue.md` to `AI/Dreaming/Runs/<run ID>/before/`.
-3. **For each entry:** read it and its linked evidence once. Then
-   - correct memory pages it shows to be wrong or out of date;
-   - add what is new to the right page (tool and vault lessons go to `Workflow/`; do not copy text from Agent rules);
-   - write only one line plus a link for scientific results; formulas and tables stay in the source;
-   - if the entry is too thin for Decisions or Lessons, do not pad pages; ask the owner for more in the report.
-4. **Tidy once.** Merge duplicate pages (a merged-away page becomes one line `MOVED TO [[page]]`). Link each page to its siblings and the project note. Update `Index.md`: every page once, one sentence, grouped by domain, under 100 lines.
-5. **Large or foreign text.** Raw imports go to `AI/Dreaming/Imports/<topic>/` with `obsidian move`. Owner-written text found in memory goes, unchanged, to its own page marked "owner text". Flag both in the report.
-6. **Report.** Write `AI/Dreaming/Runs/<run ID>.md`: entries and their status; pages created, changed and merged; a short table of claims checked and against what; conflicts; owner to-do items; and the list of files changed.
-7. **Close the queue.** Mark each entry `processed: <run ID>` and shorten it to one line (its full text is in the snapshot). Leave failures as `failed`.
+2. **Snapshot.** Before any edit, copy every topic folder you will change (including `Topics/Workflow/` if it exists), `AI/Memory/Index.md` and `AI/Dreaming/Queue.md` to `AI/Dreaming/Runs/<run ID>/before/`.
+3. **For each entry:** read it and its linked evidence once. Then sort each item:
+   - Does it apply only to this project? If not (tools, models, builds, the vault, search habits), it goes to `Topics/Workflow/Lessons` or `Topics/Workflow/Conventions`. Create these pages if missing. Do not copy text from Agent rules.
+   - Otherwise it goes to the project's page of the right kind.
+   - Scientific results: one line plus a link; formulas, tables and long lists of numbers stay in the source.
+   - If the entry is too thin for Decisions or Lessons, do not pad pages; ask the owner for more in the report.
+4. **Rewrite, do not append.** For every page you touch, rewrite the whole page so it reads as current knowledge: merge the new items with the old ones, replace or delete lines the new items make out of date (keep a replaced claim as one short "earlier: …" line only if the change matters). `State` holds only what is true now. Each `State` bullet is at most two lines; keep a number only if a decision depends on it. Split any page above 5 KB.
+5. **Tidy once.** Merge duplicate pages (a merged-away page becomes one line `MOVED TO [[page]]`). Link each page to its siblings and the project note. Update `Index.md`: every page once, one sentence, grouped by domain, under 100 lines.
+6. **Large or foreign text.** Raw imports go to `AI/Dreaming/Imports/<topic>/` with `obsidian move`. Owner-written text found in memory goes, unchanged, to its own page marked "owner text". Flag both in the report.
+7. **Report.** Write `AI/Dreaming/Runs/<run ID>.md`: entries and their status; pages created, changed and merged; a short table of claims checked and against what; conflicts; owner to-do items; and the list of files changed.
+8. **Close the queue.** Mark each entry `processed: <run ID>` and shorten it to one line (its full text is in the snapshot). Leave failures as `failed`.
 
 ## Before you finish
 
 - [ ] Every changed file is in `before/`.
 - [ ] Every page has the five frontmatter fields, and every claim is `verified (date, how)` or `reported (source)`.
+- [ ] Every `verified` says how (re-run, recompute, primary data). One that only cites a summary or report becomes `reported (source)`.
+- [ ] No fact appears twice on a page or across pages; keep it once and link to it.
+- [ ] `last_verified` changed only on pages where you checked a claim against evidence in this run.
+- [ ] Every page you touched was rewritten, not appended to; `State` has only current facts, two lines per bullet at most; no page over 5 KB.
+- [ ] Every lesson that is not specific to one project is in `Topics/Workflow/`, not in a project folder.
 - [ ] No page copies the project note, a paper or raw imports; no secrets or transcripts.
 - [ ] `Index.md` lists every page once; all `[[links]]` resolve.
 - [ ] Report written; every queue entry is `processed` (one line) or `failed`.
