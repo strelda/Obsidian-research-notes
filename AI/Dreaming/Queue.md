@@ -1,24 +1,27 @@
 ---
 type: dreaming-queue
-last_edited_by: Antigravity
 ---
 # Dreaming queue
 
-Pending inputs for the next manual dream ([[AI/Skills/memory-dreaming/SKILL|memory-dreaming]]). Add only permitted material, never full transcripts, secrets or `ai_access: none/w` content. Status is `pending`, `processed` (with run ID) or `failed` (retry).
+Inputs for the next memory dream. When the owner says "save to memory", add one entry here. Only a dream ([[AI/Skills/memory-dreaming/SKILL|memory-dreaming]]) changes `AI/Memory/`.
 
-A dream remembers only what an entry and the files it links say, so write entries for the future reader, not as a one-line summary. Entry format:
+## How to add an entry
+
+1. Add your entry at the end of **Inputs**. Do not change any other line of this file.
+2. Write what a later session needs and cannot easily get from the project note. Fill only the fields that have content.
+3. Link evidence (paths, artifact IDs, commits). Do not paste results, transcripts or secrets.
+4. Label each claim: `verified` if you re-ran, recomputed or read the primary data yourself; otherwise `reported (source)`.
 
 ```
-- [pending] YYYY-MM-DD — agent — project/topic
+- [pending] YYYY-MM-DD — agent — project (path of project note)
   - Decisions (with reason):
-  - Lessons / surprises (what failed or differed from expectation):
-  - Conventions or owner corrections (how the owner wants things done):
-  - Stale or conflicting sources found:
-  - State change worth knowing next time:
-  - Evidence: [[links]] / paths to logs, reports, commits (do not paste results; link them)
+  - Lessons (what you expected vs what happened):
+  - Owner corrections and conventions:
+  - Stale or conflicting sources:
+  - State change:
+  - Evidence:
 ```
 
-Leave a field out if empty. Do not restate what the project note already says. Mark each claim `reported` or `verified`.
+Status: `pending`, `processed: <run ID>` or `failed`. A dream shortens processed entries to one line.
 
 ## Inputs
-
